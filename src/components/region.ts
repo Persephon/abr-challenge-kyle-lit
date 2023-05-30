@@ -1,5 +1,5 @@
 import { css, html } from 'lit'
-import { customElement, property } from 'lit/decorators.js'
+import { customElement } from 'lit/decorators.js'
 import { MobxLitElement } from '@adobe/lit-mobx'
 
 import { store } from '../index'

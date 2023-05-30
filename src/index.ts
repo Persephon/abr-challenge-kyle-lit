@@ -14,14 +14,9 @@ export const store = Store.create({
     },
 });
 
-const fishes = await fetch(
-    "http://localhost:5001/gofish?apikey=abrradiology"
-).then((response) => response.json());
+fetch("http://localhost:5001/gofish?apikey=abrradiology")
+    .then((response) => response.json())
+    .then(fishes => store.addFishes(fishes));
 
-store.addFishes(fishes);
-
-export const router = await initRouter(
-    document.getElementById("router-outlet") ?? document.createElement("div")
-);
-
-store.route.setRoute(router.location.pathname);
+initRouter(document.getElementById("router-outlet") ?? document.createElement("div"))
+    .then(router => store.route.setRoute(router.location.pathname));
