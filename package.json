@@ -1,0 +1,23 @@
+{
+  "name": "abr-challenge-kyle-lit",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@adobe/lit-mobx": "^2.2.0",
+    "@material/web": "^1.0.0-pre.9",
+    "@vaadin/router": "^1.7.5",
+    "lit": "^2.7.4",
+    "mobx": "^6.9.0",
+    "mobx-state-tree": "^5.1.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4",
+    "vite": "^4.3.9"
+  }
+}
